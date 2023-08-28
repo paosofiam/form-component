@@ -13,6 +13,7 @@ event.preventDefault();
 
 const botoncito = document.getElementById("botoncito");
 botoncito.addEventListener('click', function (e) {
+  e.preventDefault();
   var variable1 = document.getElementById("input1").value;
   var variable2 = document.getElementById("input2").value;
 
