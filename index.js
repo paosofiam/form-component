@@ -1,5 +1,5 @@
-function calculadora(evento0) {
-evento.preventDefault();
+function calculadora(event) {
+event.preventDefault();
   var variable1 = document.getElementById("input1").value;
   var variable2 = document.getElementById("input2").value;
 
@@ -7,5 +7,5 @@ evento.preventDefault();
   console.log(variable3);
   const resultado = document.getElementById("resultado");
   console.log(resultado);
-  //resultado.innerHTML = variable3;
+  resultado.innerHTML = variable3;
 }
