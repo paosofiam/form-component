@@ -5,6 +5,6 @@ function calculadora() {
   var variable3 = parseInt(variable1) + parseInt(variable2);
   console.log(variable3);
   const resultado = document.getElementById("resultado");
-  //console.log(resultado);
-  resultado.innerHTML = variable3;
+  console.log(resultado);
+  //resultado.innerHTML = variable3;
 }
