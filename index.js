@@ -1,4 +1,5 @@
-function calculadora() {
+function calculadora(evento0) {
+evento.preventDefault();
   var variable1 = document.getElementById("input1").value;
   var variable2 = document.getElementById("input2").value;
 
