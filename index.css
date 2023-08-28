@@ -1,0 +1,17 @@
+label {
+  display: flex;
+  flex-direction: column;
+}
+
+button {
+  padding: 0px 10px;
+  border: none;
+  color: grey;
+  background-color: lightgray;
+  text-decoration: none;
+  border-radius: 5px;
+  width: 10vw;
+  height: 10vh;
+  margin: auto;
+  box-shadow: 5px 3px lightgreen;
+}
