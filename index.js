@@ -1,8 +1,8 @@
 function calculadora() {
-  var variable1 = parseInt(document.getElementById("input1").value);
-  var variable2 = parseInt(document.getElementById("input2").value);
+  var variable1 = document.getElementById("input1").value;
+  var variable2 = document.getElementById("input2").value;
 
-  var variable3 = variable1 + variable2;
+  var variable3 = parseInt(variable1) + parseInt(variable2);
   console.log(variable3);
   const resultado = document.getElementById("resultado");
   //console.log(resultado);
