@@ -1,44 +1,221 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Calculator9000</title>
-    <link rel="icon" type="image/png" href="/favicon.png" />
-    <link rel="stylesheet" href="index.css" />
-  </head>
-  <body>
-    <main>
-      <section>
-        <form id="myForm">
-          <div class="cajita">
-            <label for="input1">
-              <span>
-                Número 1
-              </span>
-              <input type="number" id="input1" />
-            </label>
-            <label for="input2">
-              <span>
-                Número 2
-              </span>
-              <input type="number" id="input2" />
-            </label>
-          </div>
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
 
-          <div class="botones">
-            <button class="esteBoton" id="botoncito">Calcular</button>
-            <!--
-            <button class="esteBoton" id="borrar" onclick="clearForm()">
-              Limpiar entradas
-            </button>
-            -->
-            <input class="esteBoton" type="reset" value="Limpiar entradas" />
-          </div>
-        </form>
-        <span id="resultado">¡Me transformaré en tu resultado!</span>
-      </section>
-    </main>
-  </body>
-  <script type="text/javascript" src="index.js"></script>
-</html>
+@media (max-width: 720px) {
+  main {
+    height: 100vh;
+    width: 100vw;
+  }
+
+  section {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+    background-color: #5d6d7e;
+    min-width: 300px;
+    width: 100vw;
+    height: 80vh;
+  }
+
+  label {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #212f3c;
+    width: 35vw;
+    height: 10vh;
+    font-family: sans-serif;
+    font-weight: bold;
+    padding: 10px;
+  }
+
+  input {
+    width: 35vw;
+    height: 10vh;
+    margin: 5px;
+    border-radius: 7px;
+    font-family: Calibri;
+    background-color: #abb2b9;
+    color: #154360;
+    font-weight: bold;
+  }
+
+  .cajita {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    height: 30vh;
+    width: 100%;
+  }
+  .botones {
+    display: flex;
+    flex-direction: column;
+    height: 40vh;
+    width: 100%;
+  }
+
+  .esteBoton {
+    width: 90vw;
+    height: 10vh;
+    border: none;
+    color: black;
+    background-color: lightgray;
+    text-decoration: none;
+    border-radius: 5px;
+    margin: auto;
+    box-shadow: 5px 4px lightgreen;
+    font-family: Verdana;
+    font-weight: bold;
+  }
+
+  .esteBoton:hover {
+    color: orange;
+    box-shadow: 5px 4px lightgreen;
+  }
+
+  .esteBoton:active {
+    color: red;
+    background-color: lightgreen;
+    position: relative;
+    top: 2px;
+    left: 2px;
+    box-shadow: 3px 2px #273746;
+  }
+
+  #resultado {
+    height: 20vh;
+    width: 100vw;
+
+    border: none;
+    color: #e8f8f5;
+    background-color: #34495e;
+    font-family: Verdana;
+    font-weight: bold;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media (min-width: 720px) {
+  main {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  form {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    background-color: #5d6d7e;
+    width: 40vw;
+    height: 30vh;
+    border-radius: 25px;
+    border: 5px solid #abb2b9;
+    padding: 20px;
+    position: r;
+  }
+
+  label {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #212f3c;
+    width: 200px;
+    height: 50px;
+    font-family: sans-serif;
+    font-weight: bold;
+    padding: 10px;
+  }
+
+  input {
+    width: 100px;
+    height: 50px;
+    margin: 5px;
+    border-radius: 10px;
+    font-family: Calibri;
+    background-color: #abb2b9;
+    color: #154360;
+    font-weight: bold;
+  }
+
+  .cajita {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  .botones {
+    display: flex;
+    flex-direction: column;
+    height: 200px;
+  }
+
+  .esteBoton {
+    padding: 10px 10px;
+    width: auto;
+    height: auto;
+    border: none;
+    color: black;
+    background-color: lightgray;
+    text-decoration: none;
+    border-radius: 5px;
+    margin: auto;
+    box-shadow: 5px 4px #273746;
+    font-family: Verdana;
+    font-weight: bold;
+  }
+
+  .esteBoton:hover {
+    color: orange;
+    box-shadow: 5px 4px lightgreen;
+  }
+
+  .esteBoton:active {
+    color: red;
+    position: relative;
+    top: 2px;
+    left: 2px;
+    box-shadow: 3px 2px #273746;
+  }
+
+  #resultado {
+    padding: 10px;
+    width: auto;
+    height: auto;
+    border: none;
+    color: #e8f8f5;
+    background-color: #34495e;
+    text-decoration: none;
+    border-radius: 5px;
+    margin: auto;
+    box-shadow: 2px 3px #abebc6;
+    font-family: Verdana;
+    font-weight: bold;
+  }
+}
