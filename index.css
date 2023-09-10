@@ -93,6 +93,7 @@ body {
     top: 2px;
     left: 2px;
     box-shadow: 3px 2px #273746;
+    cursor: pointer;
   }
 
   #resultado {
@@ -194,6 +195,7 @@ body {
   .esteBoton:hover {
     color: orange;
     box-shadow: 5px 4px lightgreen;
+    cursor: pinter;
   }
 
   .esteBoton:active {
@@ -202,6 +204,7 @@ body {
     top: 2px;
     left: 2px;
     box-shadow: 3px 2px #273746;
+    cursor: crosshair;
   }
 
   #resultado {
