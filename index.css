@@ -195,7 +195,7 @@ body {
   .esteBoton:hover {
     color: orange;
     box-shadow: 5px 4px lightgreen;
-    cursor: pinter;
+    cursor: pointer;
     transition: all 2000ms ease-in-out 0s;
   }
 
