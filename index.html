@@ -10,7 +10,7 @@
   <body>
     <main>
       <section>
-        <form>
+        <form id="myForm">
           <div class="cajita">
             <label for="input1">
               <span>
@@ -27,8 +27,13 @@
           </div>
 
           <div class="botones">
-            <button id="botoncito">Calcular</button>
-            <button id="borrar">Limpiar entradas</button>
+            <button class="esteBoton" id="botoncito">Calcular</button>
+            <!--
+            <button class="esteBoton" id="borrar" onclick="clearForm()">
+              Limpiar entradas
+            </button>
+            -->
+            <input class="esteBoton" type="reset" value="Limpiar entradas" />
           </div>
         </form>
         <span id="resultado">¡Me transformaré en tu resultado!</span>
