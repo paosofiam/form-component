@@ -164,6 +164,7 @@ body {
     background-color: #abb2b9;
     color: #154360;
     font-weight: bold;
+    cursor: text;
   }
 
   .cajita {
@@ -196,7 +197,7 @@ body {
     color: orange;
     box-shadow: 5px 4px lightgreen;
     cursor: pointer;
-    transition: all 2000ms ease-in-out 0s;
+    transition: all 500ms ease-in-out 0s;
   }
 
   .esteBoton:active {
