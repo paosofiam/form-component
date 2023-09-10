@@ -196,6 +196,7 @@ body {
     color: orange;
     box-shadow: 5px 4px lightgreen;
     cursor: pinter;
+    transition: all 2000ms ease-in-out 0s;
   }
 
   .esteBoton:active {
