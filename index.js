@@ -10,3 +10,7 @@ botoncito.addEventListener("click", function (e) {
   console.log(resultado);
   resultado.innerHTML = "el resultado es: " + variable3;
 });
+
+/*function clearForm() {
+  document.getElementById("myForm").reset();
+}*/
