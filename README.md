@@ -1,4 +1,3 @@
-/*# nuevo-repositorio*/
 <div>
     <h1>Componente de Formulario</h1>
 </div>
@@ -19,7 +18,3 @@ Cuento con un nivel de inglés avanzado y conversacional, el cual he usado const
 📩 ev_mendoza@outlook.com
 📲 +52 81 1590 5585
 ```
-
-/*# Politícas de privacidad
-
-Las imagenes, archivos css, html y adicionales son propiedad de ©2024 Paola Sofía*/
